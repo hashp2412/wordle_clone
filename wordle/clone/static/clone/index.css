@@ -1,0 +1,138 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgba(159, 151, 151, .7);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+hr {
+    width: 700px;
+}
+
+#title {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Pacifico', cursive;
+    animation : float 1.5s  alternate ease-in;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+#board {
+    width: 350px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    animation : floatinf 1.8s ;
+}
+@keyframes floatinf {
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.tile {
+    /* Box */
+    border: 2px solid lightgray;
+    width: 60px;
+    height: 60px;
+    margin: 2.5px;
+
+    /* Text */
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.correct {
+    background-color: #6AAA64;
+    color: white;
+    border-color: white;
+}
+
+.present {
+    background-color: #C9B458;
+    color: white;
+    border-color: white;
+}
+
+.absent {
+    background-color: #535556;
+    color: white;
+    border-color:white;
+}
+
+
+.keyboard-row {
+    width: 400px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key-tile {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 36px;
+    height: 40px;
+    margin: 1px;
+    border: 1px solid lightgray;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enter-key-tile {
+    width: 76px;
+    height: 40px;
+    margin: 1px;
+    border: 1px solid lightgray;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flip{
+    animation: fliped 1.8s ease;
+    
+}
+
+@keyframes fliped {
+    0% {
+       transform: rotateY(0deg);
+      }
+   
+    100% {
+        transform: rotateY(360deg);
+      }
+}
