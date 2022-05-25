@@ -5,7 +5,7 @@ A django based clone of wordle game
 > pip install requirements.txt <br>
 > python manage.py runserver
 <hr>
-<h3><font color="orange">How it looks</font></h3>
+<h3 style="color:orange">How it looks</h3>
 <hr>
 
 ![image](https://user-images.githubusercontent.com/25588204/170267890-e1363bcc-9990-42a2-ae18-5077dc9012b3.png)
